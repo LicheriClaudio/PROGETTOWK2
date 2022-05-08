@@ -1,10 +1,12 @@
 
 
 /* HEADER */
-
+html{
+    font-size: 100%;
+}
 
 body{
-    
+    box-sizing: border-box;
     font-family: 'Fira Sans',
     sans-serif;
     color: #000;
@@ -12,12 +14,13 @@ body{
     line-height: 1.8;
     margin:auto;
     text-align: center;
+    margin: 0 auto;
 }
 
 .box1 {
     box-shadow: 0 2px 10px rgb(226, 226, 226);
     padding: 1em;
-    
+    font-weight: bold;
     top: 0;
     display: flex;
     flex-wrap: wrap;
@@ -31,15 +34,17 @@ body{
 
 .box2{
     background-image: url(../images/banner.jpg);
-    padding: 2px;
-    background-position: x center;
+    padding: 5px;
+    
     background-size: cover;
     background-repeat: no-repeat;
     color: white ;
     box-shadow: 0 2px 10px rgb(226, 226, 226);
     box-sizing: border-box;
     padding: 2rem 2rem 2rem 2rem;
-}
+    font-weight: bold;
+    
+}   
 .box2 h1 {
     font-size: 4rem;
     line-height: 1;
@@ -54,12 +59,15 @@ body{
     font-size: 1.9rem;
     animation-name: premimi ;
     animation-duration: 1s;
-    box-shadow: 0 0 0 0 rgb(0, 0, 0);
+    
     animation-timing-function: ease;
     animation-iteration-count: infinite;
-    margin: 0.5em;
+    margin-left: 0.5em;
     cursor: pointer;
     transition: all 1s;
+    padding: 0.5rem;
+    
+    
        
     
     
@@ -69,12 +77,14 @@ body{
 .anim1 {
     box-shadow: 2px 2px 4px;
     background: linear-gradient(66deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 97%);
+    
     font-size: 1.9rem;
     text-decoration: #ffffff;
+    
 }
 .box2 button:hover {
-    transform: scale(1.2);
-   
+    transform: scale(1.3);
+    border-radius: 1.5rem;
     z-index: 3;
     cursor: pointer;
 }
@@ -136,24 +146,27 @@ nav {
 .box3 h2 { 
         font-size: 3.5rem;
         text-shadow: 1rem 1rem 1rem 1rem #000;  
-        text-align: center;     
+        text-align: center; 
+        font-weight: bold;    
 }
 .box3 p {
     font-size: 1rem;
     text-align: center;
+    font-weight: bold;
 }
 
 .box h3 {
     text-align: center;
-    font-weight: 3rem;
+    
     font:bold;
     border: solid;
+    font-weight: bold;
    
 }
 
 .box3 {
     text-align: center;
-    font-weight: 2rem;
+    font-weight: bold;
     padding: 2rem;
 }
 .box4 {
@@ -161,7 +174,9 @@ nav {
     color: white;
     padding: 3rem 3rem 3rem;
     font-size: 3rem;
-    line-height: 1.2;
+    line-height: 2.5;
+    font-weight: bold;
+
     
 }
 .box4 p {
@@ -181,6 +196,7 @@ nav {
 .box5 p {
     font-size: 1rem;
     text-align: center;
+    
 }
 
 .box5 h3 {
@@ -192,10 +208,16 @@ nav {
 }
 
 .box5 {
+    
+    
+    flex-basis: auto;
+    font-weight:bold;
+    padding: 1rem;
+    line-height:2.5;
     text-align: center;
-    font-weight: 2rem;
-    padding: 2rem;
 }
+
+
 
 
 
@@ -206,6 +228,7 @@ footer {
     justify-content: space-between;
     background-color: rgb(238, 238, 238);
     text-align: left;
+    font-weight: bold;
 }
 
 footer h5 {
@@ -259,6 +282,121 @@ footer button {
     
 }
 
+section.sezione7.header {
+    grid-area: header;
+
+}
+
+section.sezione7.header1 {
+    grid-area: header1;
+
+}
+
+section.sezione7.header2 {
+    grid-area: header2;
+
+}
+
+section.sezione7.col1 {
+    grid-area: col1;
+
+}
+
+section.sezione7.col2 {
+    grid-area: col2;
+
+}
+
+.col3 {
+    grid-area: col3;
+
+}
+
+.sezione7 {
+    display: grid;
+    grid-template-areas:
+        'header col1'
+        'header1 col2'
+        'header2 col3';
+
+     grid-template-rows: 1fr 1fr 1fr 1fr; 
+}
+
+
+
+.sezione7 div p {
+    flex: 1 1 0;
+    text-align: center;
+}
+
+/* CONTATTI */
+main.contatti {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 1.5rem;
+    align-items: center;
+}
+
+main.contatti h2 {
+    margin: 4rem 0 2rem 0;
+}
+
+main.contatti form input {
+    
+    width: 70%;
+    margin: 0 auto 2rem auto;
+}
+
+main.contatti form input[name="nome"],
+main.contatti form input[name="email"] {
+    height: 3rem;
+}
+
+main.contatti form input[name="messaggio"] {
+    height: 6rem;
+}
+
+main.contatti form input[name="submit"] {
+    height: 3.5rem;
+    width: 16rem;
+    background: linear-gradient(66deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 97%);
+    color: white;
+    border: white;
+    font-size: 1.2rem;
+    animation-name: premimi;
+    animation-duration: 1s;
+    box-shadow: 0 0 0 0 rgb(0, 0, 0);
+    margin: 1rem;
+}
+
+main.contatti address,
+main.contatti p {
+    width: 40%;
+    margin: 2rem auto;
+    font:0.8rem   ;
+}
+
+main.contatti p:last-child {
+    width: 70%;
+    margin: 1.8rem auto;
+}
+
+section address{
+    font-size: 1.2rem;
+}
+.sezione9 p {
+    font-size: 0.8rem;
+    font-weight: 1rem
+    ;
+
+
+}
+.container3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 2rem auto;
+}
 
 
 
@@ -275,7 +413,88 @@ footer button {
     }
 }
 
-@media screen and (max-width:766px) {
+
+
+
+
+
+
+h3 {
+    font-size: 2rem;
+    font:bold 2rem;
+    font-weight: 1rem;
+}
+
+
+
+.sezione7 div {
+    
+    
+    justify-content: center;
+}
+
+.sezione7 div p {
+    flex: 1 1 0;
+    text-align: center;
+}
+
+.sezione7 div.header {
+    background-color:  rgb(171, 200, 228);
+    
+}
+.sezione7 div.col1 {
+    background-color: rgb(171, 200, 228);
+}
+.sezione7 div.col3 {
+background-color: rgb(171, 200, 228);
+}
+
+footer div.container2 {
+    display: flex;
+}
+
+footer div.container2 div {
+    flex: 1 1 0;
+    padding: 0 2rem;
+}
+/* CHI SIAMO  */
+main.CHISIAMO {
+    text-align: center;
+    margin: 4rem 0;
+}
+.sezione5,
+.sezione6,
+.sezione7 {
+    margin: auto;
+    padding: 0 4%;
+}
+
+.sezione5 p,
+.sezione6 p {
+    margin: 2rem 0;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+section.sezione6 div {
+    box-sizing: border-box;
+}
+
+section.sezione6 div img {
+    width: 100%;
+}
+
+main.CHISIAMO h3 {
+    font-weight: bold;
+    margin: 10rem auto 2rem auto;
+}
+    .sezione5 h2{
+        font-weight: bold;
+        font-size: 4rem;
+    }
+
+/* RESPONSIVE */ 
+@media screen and (min-width:766px) {
     header nav {
         height: 0;
         overflow: hidden;
@@ -288,9 +507,128 @@ footer button {
         justify-content: center;
         font-size: 2rem;
     }
+    
+    
+    
+    .box5 {
+    
+        display: flex;
+       
+        font-weight: 2rem;
+        padding: 1rem;
+        font-size: 1.6rem;
+        
+        
+    }
+      
+
+        
+    
+    .box5 img {
+        display: flex;
+        width: 100%;
+        
+        
+        
+    }
+    .box5 div {
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        
+    }
+    .box5 h4 {
+        font-weight: bold;
+        text-align: left;
+        
+    }
+    .box5 p {
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .sezione7 div.header {
+        background-color:rgb(103, 135, 165);
+    }
+    .sezione7 div.header1,
+    .sezione7 div.header2 {
+        display: none;
+    }
+    .sezione7 {
+        grid-template-areas:
+            'header'
+            'col1'
+            'col2'
+            'col3';
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .icon1 {
+        display: flex;
+        margin: 1rem;
+        
+    }
+    .box3 {
+        text-align: center;
+        padding: 3rem;
+    }
+    .box3 p {
+        
+        text-align:center ;
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+    .sezione6 {
+        display:flex;
+        text-align: center;
+        justify-content: space-between;
+        
+
+    }
+    .sezione6,img-set {
+    
+        display:flex ;
+        width: 80%;
+        height: 80%;
+        
+        
+        
+    }
+
+    .sezione6 div {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.6rem;
+    }
+    .fb {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+   
+    
+    
+
+    .icon1 div {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+
+    .icon1 i{
+     display: block;
+    }  
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+  
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1024px) {
     header div.container label i {
         display: none;
     }
@@ -307,12 +645,55 @@ footer button {
         padding: 8rem 12rem 4rem 12rem;
         background-size: cover;
     }
+    .box2 {
+        background-image: url(../images/banner.jpg);
+        padding: 5px;
+        background-attachment:local;
+        background-size:100%;
+        background-repeat: no-repeat;
+        color: white;
+        box-shadow: 0 2px 10px rgb(226, 226, 226);
+        
+        padding: 10rem 10rem 10rem 10rem;
+        font-weight: bold;
+    }
+
+    .box5 {
+        position: relative;
+        text-align: center;
+        display: flex;
+        margin-left: 30rem;
+        font-weight: 2rem;
+        padding: 1rem;
+        font-size: 1.6rem;
+        align-items: center;
+        box-sizing:border-box;
+    
+    
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .sezione6  {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 70%;
+        
+        
+
+    }
+    
+  
+   
+
+   
+
+
+    
+   
     
 
 
-
-/* MAIN */
-
-/* FOOTER */
-
-/* RESPONSIVE */ 
+}
