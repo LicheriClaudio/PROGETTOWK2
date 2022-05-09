@@ -2,7 +2,7 @@
 
 /* HEADER */
 html{
-    font-size: 90%;
+    font-size: 80%;
 }
 
 body{
@@ -13,7 +13,7 @@ body{
     font-size: 1.5rem;
     line-height: 1.8;
     margin:auto;
-    text-align: center;
+    
     margin: 0 auto;
 }
 
@@ -689,6 +689,11 @@ main.CHISIAMO h3 {
 }
 
 @media screen and (min-width:1024px) {
+
+    html {
+     font-size: 100%;
+     display: block;
+    }
     header div.container label i {
         display: none;
     }
@@ -709,7 +714,7 @@ main.CHISIAMO h3 {
         background-image: url(../images/banner.jpg);
         padding: 5px;
         background-attachment:local;
-        background-size:100%;
+        
         background-repeat: no-repeat;
         color: white;
         box-shadow: 0 2px 10px rgb(226, 226, 226);
